@@ -2,7 +2,7 @@
 
 import { ref, watch } from "vue";
 import Gc7 from './Gc7.vue'
-import Card from "./Card.vue";
+import card from "./Card.vue";
 
 defineProps({
 	msg: String,
@@ -26,19 +26,19 @@ function cl(count) {
 		<button type="button" @click="count++">count is {{ count }}</button>
 	</div>
 	
-	<Card>
+	<card>
 		<template v-slot:title>
 			<h3>Un Titre de Carte from HelloWorld</h3>
 		</template>
 		<p>Un autre contenu de carte from HelloWorld</p>
-	</Card>
+	</card>
 	
-	<Card>
+	<card>
 		<template v-slot:title>
 			<h3>Un autre Titre de Carte from HelloWorld</h3>
 			<p>Sans content for slot</p>
 		</template>
-	</Card>
+	</card>
 	
 	<Gc7 msg="Gc7.vue in HelloWorld">
 		<slot name="Card">Gc7 Vue</slot>

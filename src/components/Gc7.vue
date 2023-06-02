@@ -25,12 +25,12 @@ function cl(count) {
 		
 	</div>
 	
-	<Card>
+	<card>
 		<template v-slot:title>
 			<h3>Un Autre Titre de Carte dans Gc7.vue</h3>
 		</template>
 		<p>Un autre contenu de carte dans Gc7.vue</p>
-	</Card>
+	</card>
 </div>
 	
 </template>
