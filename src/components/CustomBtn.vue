@@ -6,7 +6,8 @@ defineProps({
 
 <template>
 	My Btn
-	<button @click="console.log('Yes !')">
+	<button @click="console.log(actionBtn)">
 		{{ actionBtn ?? 'ooo' }}
 	</button>
+	<slot>Default msg</slot>
 </template>
