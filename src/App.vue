@@ -1,7 +1,23 @@
-<script setup lang="ts">
+<script setup>
 import CustomBtn from "./components/CustomBtn.vue";
 
 const title = "My App";
+
+const info = "Hello !"
+
+// const infoProps = [{ descr: "descr" }, { status: "infodescr" }];
+</script>
+<script>
+// export default {
+// 	components: {
+// 		CustomBtn,
+// 	},
+// 	data() {
+// 		return {
+// 			info: "Hello World!",
+// 		};
+// 	},
+// };
 </script>
 
 <template>
@@ -12,12 +28,12 @@ const title = "My App";
 			explicabo possimus cum doloremque culpa fugit, animi at amet libero ullam
 			temporibus quaerat, in deserunt.
 		</p>
-
-		<custom-btn actionBtn='Yes !'>
-			<br>Parent says : → console.log('Yes !')
-			<template #actionDescr>
-					Action Description from parent
-			</template>
+		
+		{{ info }} (dans parent)
+		<hr>
+		
+		<custom-btn actionBtn="Yes !" :info="info">
+			<br />Parent says : → console.log('Yes !')
 		</custom-btn>
 	</div>
 </template>
