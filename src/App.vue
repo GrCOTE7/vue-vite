@@ -13,6 +13,11 @@ const title = "My App";
 			temporibus quaerat, in deserunt.
 		</p>
 
-		<custom-btn actionBtn='Yes !'><br>→ console.log('Yes !')</custom-btn>
+		<custom-btn actionBtn='Yes !'>
+			<br>Parent says : → console.log('Yes !')
+			<template #actionDescr>
+					Action Description from parent
+			</template>
+		</custom-btn>
 	</div>
 </template>

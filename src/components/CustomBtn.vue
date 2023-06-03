@@ -8,6 +8,7 @@ defineProps({
 	My Btn
 	<button @click="console.log(actionBtn)">
 		{{ actionBtn ?? 'ooo' }}
-	</button>
-	<slot>Default msg</slot>
+	</button><br>
+	<slot>Default slot</slot><br>
+	<slot name="actionDescr">Default actionDescr</slot>
 </template>
